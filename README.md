@@ -98,7 +98,3 @@ This application works in all modern browsers that support ES6+ features and Rea
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
