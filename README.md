@@ -1,100 +1,154 @@
-# N-Queens Visualizer (React)
+# 🌟 N-Queens Visualizer - Enhanced Google-Style UI
 
-A beautiful and interactive N-Queens puzzle visualizer built with React. This application demonstrates all possible solutions for placing N queens on an N×N chessboard such that no two queens attack each other.
+A modern, vibrant React-based visualization tool for the classic N-Queens problem featuring a beautiful Google-inspired interface with Tailwind CSS.
 
-## Features
+![N-Queens Visualizer](https://img.shields.io/badge/React-18.2.0-blue?logo=react)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4.17-06B6D4?logo=tailwindcss)
+![JavaScript](https://img.shields.io/badge/JavaScript-JSX-yellow?logo=javascript)
 
-- **Interactive Visualization**: Watch the algorithm solve the N-Queens problem step by step
-- **Speed Control**: Adjust the visualization speed with a slider
-- **Multiple Solutions**: View all possible arrangements for a given board size
-- **Responsive Design**: Works on desktop and mobile devices
-- **Modern UI**: Clean, gradient-based design with smooth animations
+## ✨ Features
 
-## Getting Started
+### 🎨 **Modern Google-Style UI**
+- **Vibrant color scheme** inspired by Google's design language
+- **Clean, minimalist interface** with professional aesthetics
+- **Smooth animations** and hover effects throughout
+- **Responsive design** that works on all devices
+
+### ♛ **Enhanced Chess Board Visualization**
+- **Larger chess squares** (64px) for better visibility
+- **Colorful alternating squares** (blue and yellow)
+- **Beautiful queen pieces** with purple styling
+- **Real-time conflict highlighting** in red
+
+### 🚀 **Interactive Features**
+- **Adjustable board size** (1-8 queens)
+- **Real-time visualization** of the backtracking algorithm
+- **Multiple solution display** with enhanced cards
+- **Speed control slider** with emoji indicators
+- **Google-style search input** with focus effects
+
+### 🛠️ **Technical Excellence**
+- **JSX file structure** for proper React development
+- **Tailwind CSS** for modern, utility-first styling
+- **Optimized performance** with smooth animations
+- **Error handling** and loading states
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (version 14 or higher)
-- npm or yarn
+- **Node.js** (version 14 or higher)
+- **npm** or **yarn**
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
-git clone <repository-url>
-cd n-queens-visualizer-react
+git clone https://github.com/shivamsbh/N-Queen.git
+cd N-Queen
 ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 npm install
 ```
 
-3. Start the development server:
+3. **Start the development server:**
 ```bash
 npm start
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. **Open your browser:**
+   - Navigate to [http://localhost:3000](http://localhost:3000)
+   - If port 3000 is busy, it will automatically use port 3001
 
-## How to Use
+## 📱 How to Use
 
-1. Enter the number of queens (1-8) in the input field
-2. Adjust the speed using the slider (left = slower, right = faster)
-3. Click the "Play" button to start the visualization
-4. Watch as the algorithm finds all possible solutions
-5. Use the "Stop" button to halt the process at any time
+1. **Enter the number of queens** (1-8) in the Google-style search input
+2. **Adjust animation speed** using the slider control
+3. **Click "🔍 Solve N-Queens"** to start the visualization
+4. **Watch the algorithm** find all possible solutions
+5. **View multiple solutions** in the responsive grid layout
 
-## Technical Details
+## 🎯 Available Scripts
 
-### Project Structure
+### `npm start`
+Runs the app in development mode with hot reloading.
 
-```
-src/
-├── components/
-│   ├── Header.js          # Application header
-│   ├── Controls.js        # Input controls and buttons
-│   ├── ChessBoard.js      # Container for all chess boards
-│   └── Board.js           # Individual chess board component
-├── hooks/
-│   └── useNQueensVisualizer.js  # Custom hook for N-Queens algorithm
-├── App.js                 # Main application component
-├── App.css               # Application styles
-├── index.js              # React entry point
-└── index.css             # Global styles
-```
+### `npm run build`
+Builds the optimized production version.
 
-### Algorithm
+### `npm test`
+Launches the test runner.
 
-The application uses a backtracking algorithm to solve the N-Queens problem:
+## 🧠 Algorithm Details
 
-1. **Placement**: Try placing a queen in each column of the current row
-2. **Validation**: Check if the placement conflicts with existing queens
-3. **Recursion**: If valid, move to the next row and repeat
-4. **Backtracking**: If no valid placement exists, backtrack and try the next position
-5. **Solution**: When all queens are placed, record the solution
+The **N-Queens problem** is solved using an efficient **backtracking algorithm**:
 
-### Performance
+1. **Place queens** one by one in different columns
+2. **Check conflicts** with previously placed queens
+3. **Backtrack** if conflicts are found
+4. **Continue** until all solutions are found
 
-- Supports board sizes from 1×1 to 8×8
-- Optimized React rendering with proper state management
-- Smooth animations with configurable speed control
+### Time Complexity: O(N!)
+### Space Complexity: O(N)
 
-## Available Scripts
+## 🎨 Design System
 
-- `npm start` - Runs the app in development mode
-- `npm build` - Builds the app for production
-- `npm test` - Launches the test runner
-- `npm eject` - Ejects from Create React App (one-way operation)
+### **Color Palette**
+- **Primary Blue**: `#3B82F6` (Google Blue)
+- **Success Green**: `#10B981` (Solutions)
+- **Warning Red**: `#EF4444` (Conflicts)
+- **Accent Yellow**: `#F59E0B` (Highlights)
+- **Purple**: `#8B5CF6` (Queen pieces)
 
-## Browser Support
+### **Typography**
+- **Headers**: Light weight, large sizes
+- **Body**: Medium weight, readable sizes
+- **Interactive**: Bold weight for emphasis
 
-This application works in all modern browsers that support ES6+ features and React 18.
+## 🛠️ Tech Stack
 
-## Contributing
+- **⚛️ React 18.2.0** - Modern React with hooks
+- **🎨 Tailwind CSS 3.4.17** - Utility-first CSS framework
+- **📦 Create React App** - Zero-configuration setup
+- **🔧 PostCSS** - CSS processing
+- **📱 Responsive Design** - Mobile-first approach
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+## 🌟 Recent Enhancements
+
+### **v2.0.0 - Google-Style Redesign**
+- ✅ Converted `.js` files to `.jsx`
+- ✅ Integrated Tailwind CSS
+- ✅ Implemented Google-inspired design
+- ✅ Enhanced chess board visualization
+- ✅ Added vibrant color scheme
+- ✅ Improved responsive layout
+- ✅ Added smooth animations
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. **Fork** the repository
+2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
+4. **Push** to the branch (`git push origin feature/amazing-feature`)
+5. **Open** a Pull Request
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Google Design** - For the beautiful design inspiration
+- **React Team** - For the amazing framework
+- **Tailwind CSS** - For the utility-first CSS framework
+- **Chess Community** - For the classic N-Queens problem
+
+---
+
+**Made with ❤️ and ⚛️ React**
+
+*Enjoy solving the N-Queens puzzle with style!* 🎉
